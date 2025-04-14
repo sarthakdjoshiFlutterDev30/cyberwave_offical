@@ -10,11 +10,6 @@ import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  FirebaseAppCheck.instance.activate(
-    webProvider: ReCaptchaV3Provider(
-      "6LeEjhgrAAAAADHsJEV1mHaIqPngjCCUJUV-GkWb",
-    ),
-  );
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
